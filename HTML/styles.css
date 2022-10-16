@@ -1,0 +1,9 @@
+.post{
+    cursor: pointer;
+}
+
+.row:has(.post:hover) .post:not(:hover){
+    opacity: 0.3;
+    transition: all;
+    transition-duration: 500ms;
+}
