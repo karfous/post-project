@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PostComponent } from './post/post.component';
 import { PostContentComponent } from './post-content/post-content.component';
+import { LoadingBarComponent } from './loading-bar/loading-bar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PostComponent,
-    PostContentComponent
+    PostContentComponent,
+    LoadingBarComponent
   ],
   imports: [
     BrowserModule,
