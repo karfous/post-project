@@ -7,6 +7,6 @@
     opacity: 0.7;
     transition: all;
     transition-duration: 600ms;
-    transition-timing-function: ease-out;
+    transition-timing-function: ease;
     /* transition-delay: 200ms; */
 }

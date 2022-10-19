@@ -7,11 +7,12 @@ import { AppComponent } from './app.component';
 import { PostComponent } from './post/post.component';
 import { PostContentComponent } from './post-content/post-content.component';
 import { LoadingBarComponent } from './loading-bar/loading-bar.component';
+import { HomepageComponent } from './homepage/homepage.component';
 
 const appRoutes: Routes = [
-  {path: '', component: LoadingBarComponent},
-  {path: 'gallery', component: PostComponent},
-  {path: 'post', component: PostContentComponent}
+  {path: '', component: HomepageComponent},
+  {path: 'post', component: HomepageComponent},
+  {path: 'post/:id', component: PostContentComponent}
 ]
 
 @NgModule({
@@ -19,7 +20,8 @@ const appRoutes: Routes = [
     AppComponent,
     PostComponent,
     PostContentComponent,
-    LoadingBarComponent
+    LoadingBarComponent,
+    HomepageComponent
   ],
   imports: [
     BrowserModule,
