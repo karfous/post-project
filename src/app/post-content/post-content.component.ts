@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { PostContentModel } from './post-content.model';
 
 @Component({
@@ -8,8 +9,8 @@ import { PostContentModel } from './post-content.model';
 })
 export class PostContentComponent implements OnInit {
   // @Input() postContentModel: PostContentModel; 
-
-  constructor() { }
+  
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
   }
