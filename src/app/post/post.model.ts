@@ -1,7 +1,7 @@
 export class PostModel {
     public title: string;
     public user: string;
-    public id: string;
+    public id: number;
     public body: string;
     public bodyShort: string;
     public comments: string[]; //array of strings

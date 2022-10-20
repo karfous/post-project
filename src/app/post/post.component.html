@@ -1,5 +1,5 @@
 <!-- Component start -->
-<a class="col post text-decoration-none color text-secondary" routerLink="/post/{{ postModel.id }}">
+<a class="col post text-decoration-none color text-secondary" [routerLink]="['/post', postModel.id]">
   <div class="feature shadow-sm p-4 rounded-bottom bg-light">
     <h3 class="title fs-4 text-truncate text-uppercase">
       {{ postModel.title }}

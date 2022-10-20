@@ -1,5 +1,15 @@
 // export let test = "ahoj";
-export let prepareModels = []; // this is the source for angular models
+export let prepareModels = [
+  {
+    id: 101,
+    title: "Ono to žije!",
+    user: "Jakub Kareš",
+    body: "Dalo to práci a musel jsem to trochu ohýbat, ale nakonec to funguje. Uf :)",
+    bodyShort:
+      "Dalo to práci a musel jsem to trochu ohýbat, ale nakonec to funguje. Uf :)",
+    comments: ["Omlouvám se všem skutečným programátorům za toto dílo."],
+  },
+]; // this is the source for angular models
 
 export let posts = fetch("https://jsonplaceholder.typicode.com/posts").then(
   (data) => data.json()

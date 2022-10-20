@@ -9,14 +9,7 @@ import * as prepareModels from '../app.prepareModels';
 export class HomepageComponent implements OnInit {
   fetched = false;
   fetchedPostModels: PostModel[] = [ // just for fun :)
-    new PostModel({
-      id: '101',
-      title: 'Ono to žije!',
-      user: 'Jakub Kareš',
-      body: 'Dalo to práci a musel jsem to trochu ohýbat, ale nakonec to funguje. Uf :)',
-      bodyShort: 'Dalo to práci a musel jsem to trochu ohýbat, ale nakonec to funguje. Uf :)',
-      comments: ['Omlouvám se všem skutečným programátorům za toto dílo.'],
-    }),
+    
     
   ];
 
@@ -27,6 +20,10 @@ export class HomepageComponent implements OnInit {
       prepareModels.prepareModels.forEach((model) => this.fetchedPostModels.push(new PostModel(model)) );
       this.fetched = true; // hide loading bar
     })
+  }
+
+  getModel(id: number){
+    return this.fetchedPostModels.find((post)=>{return post.id === id})
   }
 
   constructor() {this.prepareData(); }  //fetch data and create models 

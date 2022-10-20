@@ -1,10 +1,10 @@
 <div class="container">
   <div class="row d-flex justify-content-center">
-    <div class="col-md-6 p-3 m-5 border border-secondary">
+    <div class="col-md-9 p-3 m-5 border border-secondary">
       <a class="" routerLink="../..">Zpět domů...</a>
-      <h3 class="title fs-2 text-uppercase">AHoj</h3>
-      <h4 class="author fs-6">Jedna</h4>
-      <div class="content mt-4">Maminka</div>
+      <h3 class="title fs-2 text-uppercase mt-2">{{ post.title}}</h3>
+      <h4 class="author fs-6">{{ post.user }}</h4>
+      <div class="content mt-4">{{ post.body }}</div>
 
       <h3 class="d-inline-block title fs-4 text-uppercase mt-5">Komentáře</h3>
       <div class="comments">Koment</div>
