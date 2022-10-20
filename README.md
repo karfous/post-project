@@ -1,5 +1,8 @@
 # NotesApp
 
+## How to deploy? Follow this article and read also comments !!
+https://medium.com/geekculture/how-to-easily-deploy-your-first-angular-app-on-heroku-65dd546c8181
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6.
 
 ## Development server
