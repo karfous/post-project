@@ -19,6 +19,7 @@ export class PostContentComponent implements OnInit {
     bodyShort: string;
     comments: string[];
   };
+  comments: any;
   constructor(
     private route: ActivatedRoute,
     
@@ -27,5 +28,6 @@ export class PostContentComponent implements OnInit {
   ngOnInit(): void {
     const id = +this.route.snapshot.params["id"];
     this.post = fetchedData.prepareModels.find((post)=>{return post.id === id})
+    
   }
 }

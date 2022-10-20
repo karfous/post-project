@@ -8,6 +8,7 @@ import { PostComponent } from './post/post.component';
 import { PostContentComponent } from './post-content/post-content.component';
 import { LoadingBarComponent } from './loading-bar/loading-bar.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { CommentsComponent } from './comments/comments.component';
 
 const appRoutes: Routes = [
   {path: '', component: HomepageComponent},
@@ -21,7 +22,8 @@ const appRoutes: Routes = [
     PostComponent,
     PostContentComponent,
     LoadingBarComponent,
-    HomepageComponent
+    HomepageComponent,
+    CommentsComponent
   ],
   imports: [
     BrowserModule,

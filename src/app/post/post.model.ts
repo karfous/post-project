@@ -4,7 +4,7 @@ export class PostModel {
     public id: number;
     public body: string;
     public bodyShort: string;
-    public comments: string[]; //array of strings
+    public comments: object[]; //array of strings
 
     constructor(fetchedModel: any){
         this.title = fetchedModel.title

@@ -6,8 +6,30 @@ export let prepareModels = [
     user: "Jakub Kareš",
     body: "Dalo to práci a musel jsem to trochu ohýbat, ale nakonec to funguje. Uf :)",
     bodyShort:
-      "Dalo to práci a musel jsem to trochu ohýbat, ale nakonec to funguje. Uf :)",
-    comments: ["Omlouvám se všem skutečným programátorům za toto dílo."],
+      "Byla to fuška, pár dní jsem moc nespal a v Angularu hledal jen to, co pravděpodobně potřebuji na zpracování úlohy. No nějak začít musím :)",
+    comments: [
+      {
+        postId: 101,
+        id: 1,
+        name: "Hlavně neaktualizovat detail příspěvku",
+        email: "jakub.kares@gmail.com",
+        body: "Data předávám pomocí routu, ale aktualizací o ně přijdu. Ve snapshotu údaj o id je, takže špatně aktualizuji komponentu? S tím souvisí i přechod na komponentu přímo přes URL. TO také bohužel nefunguje :(",
+      },
+      {
+        postId: 101,
+        id: 2,
+        name: "Ach ten typescript",
+        email: "jakub.kares@gmail.com",
+        body: "Data jsem si musel fetchnout pomocí javascriptu, protože jsem bojoval se striktními pravidly definování proměnných. Aspoň je co studovat.",
+      },
+      {
+        postId: 101,
+        id: 3,
+        name: "Architektura je teda bídná",
+        email: "jakub.kares@gmail.com",
+        body: "Architektura není nic moc. Tak uvidíme.",
+      },
+    ],
   },
 ]; // this is the source for angular models
 
@@ -34,4 +56,5 @@ Promise.allSettled(promiseArray).then((results) => {
     );
     prepareModels.push(post);
   });
+  console.log(prepareModels);
 });
